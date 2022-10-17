@@ -1,8 +1,9 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning px-3">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
-        <img alt="logo" src="../assets/img/cw-logo.png" height="45" />
+       <h3> <img alt="Cigar" class="rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7tImw8gt1JwGs4GORu1AeumOUDjBQ2Bzd5pxAhgCUoeazHzqYkGv5awYUK2oW7ckxBUA&usqp=CAU" height="45" />
+        My Stick Box</h3>
       </div>
     </router-link>
     <button

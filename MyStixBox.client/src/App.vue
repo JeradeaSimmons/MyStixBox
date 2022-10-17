@@ -6,8 +6,8 @@
     <router-view />
   </main>
   <footer>
-    <div class="bg-dark text-light text-center p-4">
-      Made with 💖 by CodeWorks
+    <div class="bg-warning text-light text-center p-4">
+      <h4 class="">A Good Cigar is The One You Are Currently Smoking!</h4>
     </div>
   </footer>
 </template>
