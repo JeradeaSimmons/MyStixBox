@@ -1,5 +1,9 @@
 <template>
- 
+ <section class="backgroundImg">
+<div class="row">
+  
+</div>
+ </section>
  
 </template>
 
@@ -10,21 +14,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.home{
-  display: grid;
-  height: 80vh;
-  place-content: center;
-  text-align: center;
-  user-select: none;
-  .home-card{
-    width: 50vw;
-    > img{
-      height: 200px;
-      max-width: 200px;
-      width: 100%;
-      object-fit: contain;
-      object-position: center;
-    }
-  }
+.backgroundImg{
+  background-image: url(https://images.freeimages.com/images/previews/f94/cigar-1441566.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  
 }
 </style>

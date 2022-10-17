@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-warning px-3">
+  <nav class="navbar navbar-expand-md navbar-dark bg-grey px-5">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
-      <div class="d-flex flex-column align-items-center">
-       <h3> <img alt="Cigar" class="rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7tImw8gt1JwGs4GORu1AeumOUDjBQ2Bzd5pxAhgCUoeazHzqYkGv5awYUK2oW7ckxBUA&usqp=CAU" height="45" />
+      <div class="d-flex flex-column align-items-center m-2">
+       <h3 class="text-dark"> <img alt="Cigar" class="rounded" src="https://images.unsplash.com/photo-1554975469-150c6e949ced?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzAzfHxjaWdhciUyMGh1bWlkb3J8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" height="65" />
         My Stick Box</h3>
       </div>
     </router-link>
@@ -22,7 +22,7 @@
         <li>
           <router-link
             :to="{ name: 'About' }"
-            class="btn text-success lighten-30 selectable text-uppercase"
+            class="btn text-dark bg-light lighten-30 selectable text-uppercase"
           >
             About
           </router-link>
@@ -54,4 +54,5 @@ a:hover {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 </style>

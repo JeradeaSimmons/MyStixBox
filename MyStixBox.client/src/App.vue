@@ -2,12 +2,12 @@
   <header>
     <Navbar />
   </header>
-  <main>
+  <main class="container-fluid">
     <router-view />
   </main>
   <footer>
-    <div class="bg-warning text-light text-center p-4">
-      <h4 class="">A Good Cigar is The One You Are Currently Smoking!</h4>
+    <div class="bg-grey text-black text-center p-4">
+      <h4 class="myText">A Good Cigar is The One You Are Currently Smoking!</h4>
     </div>
   </footer>
 </template>
@@ -27,4 +27,11 @@ export default {
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
+
+
+
+.myText {
+  font-family: monospace;
+  font-size: larger;
+}
 </style>
