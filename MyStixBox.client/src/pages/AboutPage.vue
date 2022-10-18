@@ -5,8 +5,9 @@
     </div>
     
     <div class="row d-flex justify-content-evenly">
-      <div class="col-md-4">
-        <img class="rounded" src="https://media.istockphoto.com/photos/cigars-in-the-humidor-picture-id468123788?k=20&m=468123788&s=612x612&w=0&h=PGbfXt9-PqRo1qo6ClaeFOIG4Ch79ETqZvI1drSEN44=" alt="Cigar Humidor">
+      <div class="col-md-5 m-2">
+        <img class="rounded img-fluid
+        " src="https://media.istockphoto.com/photos/cigars-in-the-humidor-picture-id468123788?k=20&m=468123788&s=612x612&w=0&h=PGbfXt9-PqRo1qo6ClaeFOIG4Ch79ETqZvI1drSEN44=" alt="Cigar Humidor">
       </div>
       <div class="col-md-5">
         <p>My name is JD Simmons,
