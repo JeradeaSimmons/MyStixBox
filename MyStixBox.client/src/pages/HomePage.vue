@@ -1,6 +1,9 @@
 <template>
  <section class="backgroundImg">
-<div class="row">
+<div class="row d-flex justify-content-evenly" v-for="s in stix" :key="s.id">
+ <div class="col-md-3">
+  <StixCard :stix="s"/>
+ </div>
   
 </div>
  </section>
@@ -14,28 +17,28 @@ import { AppState } from "../AppState";
 import { logger } from "../utils/Logger";
 import Pop from "../utils/Pop";
 import {stixService } from "../services/StixService";
+import StixCard from "../components/StixCard.vue";
 
 
 export default {
-  
-  setup(){
-async function getStix(){
-    try {
-      await stixService.getStix();
-    } catch (error) {
-      logger.error(error)
-      Pop.toast(error.message, 'error')
-    }
-  }
-
-
-onMounted(()=>{
-  getStix();
-})
-return{
-stix: computed(()=> AppState.stix)
-}
-  }
+    setup() {
+        async function getStix() {
+            try {
+                await stixService.getStix();
+            }
+            catch (error) {
+                logger.error(error);
+                Pop.toast(error.message, "error");
+            }
+        }
+        onMounted(() => {
+            getStix();
+        });
+        return {
+            stix: computed(() => AppState.stix)
+        };
+    },
+    components: { StixCard }
 }
 </script>
 
