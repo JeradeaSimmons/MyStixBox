@@ -1,9 +1,10 @@
 <template>
  <section class="backgroundImg">
-<div class="row d-flex justify-content-evenly" v-for="s in stix" :key="s.id">
- <div class="col-md-3">
-  <StixCard :stix="s"/>
- </div>
+  <div class="text-white">  <h1 >SOON TO BE CREATE/SEARCH BAR</h1> </div>
+<div class="masonry">
+ 
+  <StixCard v-for="s in stix" :key="s.id" :stix="s"/>
+ 
   
 </div>
  </section>
@@ -47,7 +48,23 @@ export default {
   background-image: url(https://images.freeimages.com/images/previews/f94/cigar-1441566.jpg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 200vh;
   
+}
+.masonry {
+  columns: 6 200px;
+  column-gap: 1rem;
+  div {
+    width: 150px;
+    
+    color: white;
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 900;
+    font-size: 2rem;
+  } 
 }
 </style>

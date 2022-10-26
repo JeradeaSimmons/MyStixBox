@@ -34,7 +34,11 @@ VALUES
 INSERT INTO stix
 (name, company, binder, filler, wrapper, price, img, creatorId, myReview)
 VALUES
-('Inner Circle', 'Cavalier', 'Honduras', 'US/Dominican/Hounduran/Nicaraguan', 'Nicaraguan', 14, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cigaraficionado.com%2Farticle%2Fcavalier-geneve-to-release-inner-circle&psig=AOvVaw10qkf0n4md3hPi-auD5eGx&ust=1663878061249000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLi4rPrapvoCFQAAAAAdAAAAABAD', '62fa6842368b261972f93aa2', 'Great smoke, plan on smoking many many more');
+('Inner Circle', 'Cavalier', 'Honduras', 'US/Dominican/Hounduran/Nicaraguan', 'Nicaraguan', 14, 'https://mshanken.imgix.net/cao/bolt/2022-07/cavalier-geneve-inner-circle-1-1600.jpg', '62fa6842368b261972f93aa2', 'Great smoke, plan on smoking many many more');
+INSERT INTO stix
+(name, company, binder, filler, wrapper, price, img, creatorId, myReview)
+VALUES
+('Tuxtla T110', 'Tatuaje', 'Nicaraguan', 'Nicaraguan', 'Sand Andres/Mexican', 12, 'https://cdn11.bigcommerce.com/s-2ooutu2zpl/images/stencil/900x900/products/44534/51971/TUX-01-100M__46299.1655847963.jpg?c=2', '62fa6842368b261972f93aa2', 'There seems to be a creamyness to this one. A go to for sure.');
 
 SELECT 
 s.*,

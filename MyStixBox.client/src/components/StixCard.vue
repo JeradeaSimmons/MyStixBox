@@ -1,9 +1,11 @@
 <template>
 
-<div class="card m-3 rounded elevate">
-  <img class="img-fluid" :src="stix.img" alt="">
+<div class="rounded elevation-3 d-flex align-items-end bg-dark mainImg">
+  <img class="img-fluid" height="" :src="stix.img" alt="">
+<div class="nameImg text-dark card">
   <h3>{{stix.company}}</h3>
   <h5>{{stix.name}}</h5>
+  </div>
 </div>
 
 
@@ -24,4 +26,13 @@ setup(props) {
 };
 </script>
 <style lang="scss" scoped>
+
+.mainImg{
+  position: relative;
+}
+
+.nameImg{
+  position: absolute;
+}
+
 </style>
