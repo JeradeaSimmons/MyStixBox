@@ -1,13 +1,12 @@
 <template>
- <section class="backgroundImg">
-  <div class="text-white">  <h1 >SOON TO BE CREATE/SEARCH BAR</h1> </div>
-<div class="masonry">
- 
-  <StixCard v-for="s in stix" :key="s.id" :stix="s"/>
- 
-  
-</div>
- </section>
+<section class="backgroundImg">
+  <div class="text-white">
+    <h1>SOON TO BE CREATE/SEARCH BAR</h1>
+  </div>
+  <div class="masonry">
+    <StixCard v-for="s in stix" :key="s.id" :stix="s" />
+  </div>
+</section>
  
 </template>
 
