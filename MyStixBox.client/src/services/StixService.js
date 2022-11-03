@@ -9,6 +9,11 @@ class StixService{
     AppState.stix = res.data
   }
 
+  async create(stix){
+    const res = await api.post('/api/stix', stix)
+    AppState.stix.push(res.data)
+  }
+
 }
 
 export const stixService = new StixService()

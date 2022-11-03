@@ -1,7 +1,12 @@
 <template>
 <section class="backgroundImg">
-  <div class="text-white">
-    <h1>SOON TO BE CREATE/SEARCH BAR</h1>
+  <div class="text-white p-3">
+   
+    <StixForm>
+      <template #button>
+        <button class="btn btn-light text-black" data-bs-target="#stix-form" data-bs-toggle="modal" title="New Stix">➕ Add Stix</button>
+      </template>
+    </StixForm>
   </div>
   <div class="masonry">
     <StixCard v-for="s in stix" :key="s.id" :stix="s" />
@@ -18,6 +23,7 @@ import { logger } from "../utils/Logger";
 import Pop from "../utils/Pop";
 import {stixService } from "../services/StixService";
 import StixCard from "../components/StixCard.vue";
+import StixForm from "../components/StixForm.vue";
 
 
 export default {
@@ -38,7 +44,7 @@ export default {
             stix: computed(() => AppState.stix)
         };
     },
-    components: { StixCard }
+    components: { StixCard, StixForm }
 }
 </script>
 
