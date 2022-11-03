@@ -44,7 +44,7 @@ export default {
             stix: computed(() => AppState.stix)
         };
     },
-    components: { StixCard}
+    components: { StixCard, StixForm }
 }
 </script>
 
