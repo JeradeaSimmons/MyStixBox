@@ -11,7 +11,7 @@
 
 </template>
 <script>
-import { objectToString } from "@vue/shared";
+
 
 export default {
   props:{
