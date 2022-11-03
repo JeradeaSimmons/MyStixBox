@@ -1,10 +1,11 @@
 <template>
 <section class="backgroundImg">
   <div class="text-white p-3">
-   
+
     <StixForm>
       <template #button>
-        <button class="btn btn-light text-black" data-bs-target="#stix-form" data-bs-toggle="modal" title="New Stix">➕ Add Stix</button>
+        <button class="btn btn-light text-black" data-bs-target="#stix-form" data-bs-toggle="modal" title="New Stix">➕
+          Add Stix</button>
       </template>
     </StixForm>
   </div>
@@ -16,8 +17,7 @@
 </template>
 
 <script>
-import { computed } from "@vue/reactivity";
-import { onMounted } from "vue";
+import { computed, onMounted } from "vue";
 import { AppState } from "../AppState";
 import { logger } from "../utils/Logger";
 import Pop from "../utils/Pop";
@@ -44,7 +44,7 @@ export default {
             stix: computed(() => AppState.stix)
         };
     },
-    components: { StixCard, StixForm }
+    components: { StixCard}
 }
 </script>
 

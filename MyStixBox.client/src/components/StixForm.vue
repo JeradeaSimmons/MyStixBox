@@ -44,7 +44,7 @@
         </div>
         <div class="col-12 mb-3">
           <label for="stix-review" class="form-label">Review</label>
-          <textarea v-model="editable.myReview" class="form-control" name="stix-review" id="keep-review" rows="3"></textarea>
+          <textarea v-model="editable.myReview" class="form-control" name="stix-review" id="stix-review" rows="3"></textarea>
         </div>
         <div class="col-12">
           <button class="btn btn-secondary" data-bs-dismiss="modal" title="submit form">Create <i class="mdi mdi-plus"></i></button>
