@@ -10,5 +10,6 @@ namespace MyStixBox.Models
         public string Img { get; set; }
         public string MyReview { get; set; }
         public string CreatorId { get; set; }
-    }
+    public Account Creator { get; set; }
+  }
 }

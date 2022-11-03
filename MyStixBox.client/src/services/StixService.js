@@ -11,6 +11,7 @@ class StixService{
 
   async create(stix){
     const res = await api.post('/api/stix', stix)
+    console.log('Created cigar', res);
     AppState.stix.push(res.data)
   }
 

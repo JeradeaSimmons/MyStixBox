@@ -15,5 +15,10 @@ namespace MyStixBox.Services
     {
       return _stixRepo.GetAll();
     }
+
+    internal Stix Create(Stix newStix)
+    {
+      return _stixRepo.Create(newStix);
+    }
   }
 }

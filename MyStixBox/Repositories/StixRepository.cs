@@ -28,5 +28,19 @@ namespace MyStixBox.Repositories
         return stix;
       }).ToList();
     }
+
+    internal Stix Create(Stix newStix)
+    {
+      string sql = @"
+      INSERT INTO stix
+      (name, company, binder, filler, wrapper, myReview, img, creatorId)
+      VALUES
+      (@name, @company, @binder, @filler, @wrapper, @myReview, @img, @creatorId);
+      SELECT LAST_INSERT_ID();
+      ";
+      int id = _db.ExecuteScalar<int>(sql, newStix);
+      newStix.Id = id;
+      return newStix;
+    }
   }
 }
