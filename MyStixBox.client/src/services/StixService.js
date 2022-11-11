@@ -17,4 +17,5 @@ class StixService{
 
 }
 
+
 export const stixService = new StixService()
