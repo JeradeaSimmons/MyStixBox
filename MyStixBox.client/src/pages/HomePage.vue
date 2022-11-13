@@ -1,6 +1,7 @@
 <template>
 <section class="backgroundImg">
   <div class="text-white p-3">
+  <p>USE API TO SEARCH</p>
 
     <StixForm>
       <template #button>
