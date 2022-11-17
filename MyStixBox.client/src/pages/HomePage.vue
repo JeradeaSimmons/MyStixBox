@@ -3,6 +3,7 @@
   <div class="text-white p-3">
   <p>USE API TO SEARCH</p>
 
+
     <StixForm>
       <template #button>
         <button class="btn btn-light text-black" data-bs-target="#stix-form" data-bs-toggle="modal" title="New Stix">➕
